@@ -65,7 +65,33 @@ int main(){
         <<"\n7>Enter your choice:";
         cin>>ch;
         switch(ch){
-            
+            case 1:
+              cout<<"Enter info:";
+              cin>>info;
+              cout<<"Front ="<<q.front<<", Rear ="<<q.rear<<endl;
+              break;
+            case 2:
+               info=q.dequeue();
+                 if(info!=-1)
+                   cout<<"Removed elements"<<info;
+                  cout<<"Front ="<<q.front<<" ,Rear ="<<q.rear<<endl;
+                  break;
+            case 3:
+              q.traverse();
+               cout<<"Front ="<<q.front<<" ,Rear ="<<q.rear<<endl;
+                  break;
+            case 4:
+                 cout<<"The queue is"<<(q.isEmpty()?"Empty":"Not Empty")<<endl;
+                 break;
+            case 5:
+                cout<<"The queue is"<<(q.isFull()?"Empty":"Not Empty")<<endl;
+                 break;
+            case 6:
+                cout<<endl<<"The code is executed by Mr. XYZ with roll no XXXX"<<endl;
+                 break;
+            default:
+                cout<<"Invalid choice!"<<endl;
         }
-    }
+    }while(ch!=6);
+    return 0;
 }
