@@ -50,3 +50,22 @@ class Queue{
         cout<<endl;
     }
 };
+int main(){
+    Queue q;
+    q.initialize();
+    int ch,info;
+    do
+    {
+        cout<<"\n1>Enqueue"
+        <<"\n2>Dequeue"
+        <<"\n3>Traverse"
+        <<"\n4>IsEmpty"
+        <<"\n5>IsFull"
+        <<"\n6>Exit"
+        <<"\n7>Enter your choice:";
+        cin>>ch;
+        switch(ch){
+            
+        }
+    }
+}
